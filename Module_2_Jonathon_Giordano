@@ -1,0 +1,17 @@
+# When I run the file as written on Canvas, I get the following error code on Rstudio:
+# Error in myMean(assignment2) : object 'assignment' not found
+# The reason the code fails is because it the variables "assignment" and "someData" within the function are not define
+# The corrected function myMean is below. Note that it only takes one variable, "assignment2", which is previously defined
+# Corrected code:
+
+  assignment2 <- c(16, 18, 14, 22, 27, 17, 19, 17, 17, 22, 20, 22)
+  > myMean <- function(assignment2) {
++     return(sum(assignment2) / length(assignment2))
++ }
+
+# Running the code
+  
+  > myMean(assignment2)
+[1] 19.25
+
+# Link to blog: https://rprogrammingblog138327428429.blogspot.com/2026/09/assignment-2.html
