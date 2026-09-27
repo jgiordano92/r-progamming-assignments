@@ -1,0 +1,22 @@
+# 1 create matrices. define matrix A and matrix b
+
+A <- matrix(1:100,  nrow = 10)
+B <- matrix(1:1000, nrow = 10)
+
+#note that A is square (10x10) and B is not square (10 x 100) 
+
+# 2 determine if each is square
+
+dim(A) #returns 10 10
+dim(B) #returns 10 100
+
+# 3 compute inverse and determinant
+
+invA <- solve(A) #returns "Error in solve.default(A) : 
+  Lapack routine dgesv: system is exactly singular: U[8,8] = 0"
+  
+detA <- det(A) #detA returns 0
+
+invB <- tryCatch(solve(B), error = function(e) e) #invB returns <simpleError in solve.default(B): 'a' (10 x 100) must be square>
+
+detB <- tryCatch(det(B),   error = function(e) e) #detB returns <simpleError in determinant.matrix(x, logarithm = TRUE, ...): 'x' must be a square matrix>
