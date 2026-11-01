@@ -1,6 +1,11 @@
 > library(devtools)
 > create_package("Friedman")
 
+#Directory for project
+Setting active project to
+  "/Users/jackgiordano/Friedman".
+
+#Description of project
 Package: Friedman
 Title: Analyse and visualise data showing the decline of concentration of pesticide residues in crops over time
 Version: 0.0.0.9000
