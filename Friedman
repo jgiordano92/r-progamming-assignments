@@ -22,3 +22,6 @@ LazyData: true
 
 > check("Friedman")
 > build("Friedman")
+
+#Link to blog
+https://rprogrammingblog138327428429.blogspot.com/2026/11/assignment-10.html
