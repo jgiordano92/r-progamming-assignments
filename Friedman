@@ -1,0 +1,19 @@
+> library(devtools)
+> create_package("Friedman")
+
+Package: Friedman
+Title: Analyse and visualise data showing the decline of concentration of pesticide residues in crops over time
+Version: 0.0.0.9000
+Authors@R: person("Jack", "Giordano",
+    email = "giordanoj1@usf.edu",
+    role = c("aut", "cre"))
+Description: A database exists showing the concentration of a pesticide's residues in various food and animal feed commodities. For proprietary reasons, this pesticide will be referred to as "Pesticide X". There are thousands of datapoints, making general trends hard to discern. This R package will summarize Pesticide X's data by crop, crop growth stage(s) at pesticide application, application rate of the pesticide, and days between application of the pesticide and harvest.In addition, it will analyse half-lives and visualize the decline of residue concentrations over time.
+Depends: R (>= 3.1.2)
+License: CCO
+Config/roxygen2/version: 8.1.1
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+LazyData: true
+
+> check("Friedman")
+> build("Friedman")
