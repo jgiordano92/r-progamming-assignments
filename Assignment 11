@@ -61,3 +61,6 @@ if (!is.numeric(x)) {
     stop("Error: x must contain only numeric values.")
   }
 
+#Link to blog:
+https://rprogrammingblog138327428429.blogspot.com/2026/11/assignment-10_042179026.html
+
